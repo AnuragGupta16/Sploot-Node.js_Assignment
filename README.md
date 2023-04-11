@@ -8,15 +8,15 @@ Deployed URl- https://writearticles.onrender.com
 
 #API to login a user with email and password
 
-login endpoinnt-/api/login
+    Endpoinnt-/api/login
 
 #API to signup a user with email and password.
-
-register endpoint- /api/register
+     
+     Endpoint- /api/register
 
 #API to create an Article.
 
-Endpoint: api/users/:userId/articles
+      Endpoint: api/users/:userId/articles
 
 #API to get all articles
 
