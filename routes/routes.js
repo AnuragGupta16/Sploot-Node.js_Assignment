@@ -6,7 +6,7 @@ const auth=require("../middlewares/auth");
 const {login,register,updateprofile} =require("../controllers/usercontroller");
 const {getarticles,createarticle}=require("../controllers/articlecontroller")
 
-router.post("/register", register);
+router.post("/signup", register);
 
 router.post("/login", login);
 
