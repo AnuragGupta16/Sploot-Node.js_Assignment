@@ -40,7 +40,8 @@ JSON Web Tokens (JWT)
 bcrypt
 Getting Started
 
-# Clone the repository: git clone https://github.com/<your-username>/nodejs-mongodb-restful-api.git
+# Clone the repository: 
+git clone https://github.com/<your-username>/nodejs-mongodb-restful-api.git
   
 Install dependencies: npm install
 Start the server: npm start
