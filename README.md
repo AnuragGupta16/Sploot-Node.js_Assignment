@@ -1,30 +1,36 @@
+Node.js RESTful API with MongoDB and User Authentication
+This repository contains an implementation of a Node.js RESTful API using Express.js and MongoDB for data storage. The API provides user authentication, allowing only authenticated users to create articles, retrieve all articles and update their own user profile.
 
-# Sploot-Node.js-Assignment
-
-Created by Anurag Gupta
-
-Deployed URl- https://writearticles.onrender.com
-
-
-#API to login a user with email and password
-
-    Endpoinnt-/api/login
-
-#API to signup a user with email and password.
-     
-     Endpoint- /api/register
-
-#API to create an Article.
-
-      Endpoint: api/users/:userId/articles
-
-#API to get all articles
-
-	Endpoint: api/articles
-  
- #API to update user profile. Only name and age are editable.
-	
-	Endpoint: api/users/:userId
-
-
-
+Features
+Signup a user with email and password.
+Endpoint: /api/signup
+Request body: { email: string, password: string, name: string, age: number }
+Response body: { message: string, token: string }
+Login a user with email and password.
+Endpoint: /api/login
+Request body: { email: string, password: string }
+Response body: { message: string, token: string }
+Create an article.
+Endpoint: /api/users/:userId/articles
+Request body: { title: string, description: string }
+Response body: { message: string, article: object }
+Get all articles.
+Endpoint: /api/articles
+Response body: [{ title: string, description: string, author: { name: string, age: number } }]
+Update user profile. Only name and age are editable.
+Endpoint: /api/users/:userId
+Request body: { name: string, age: number }
+Response body: { message: string, user: object }
+Technologies Used
+Node.js
+Express.js
+MongoDB
+JSON Web Tokens (JWT)
+bcrypt
+Getting Started
+Clone the repository: git clone https://github.com/<your-username>/nodejs-mongodb-restful-api.git
+Install dependencies: npm install
+Start the server: npm start
+Use a tool like Postman to make requests to the API.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
