@@ -138,6 +138,7 @@ const updateprofile=async(req,res)=>
    }
    
    );
+     data.password=undefined;
    const result={
     statusCode:null,
     data:{
