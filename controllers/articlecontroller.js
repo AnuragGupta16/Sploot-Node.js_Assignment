@@ -5,7 +5,8 @@ const Article=require("../models/Article");
 const getarticles=async(req,res)=>
 {
     try{
-    const  data = await Article.find().populate("createdBy");
+    const  data = await Article.find().populate("createdBy",
+      "-password");
 
     const result={
       
