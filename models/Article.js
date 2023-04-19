@@ -4,11 +4,11 @@ const mongoose = require("mongoose");
 const ArticleSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: [true, "name is required."],
+    required: [true, "title is required."],
   },
   description: {
     type: String,
-    required: [true, "address is required."],
+    required: [true, "description is required."],
   },
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,
